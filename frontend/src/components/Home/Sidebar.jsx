@@ -31,8 +31,8 @@ const Sidebar = () => {
   return (
     <>
       <div className="break-words">
-        <h2 className="text-xl font-semibold">The Code Master</h2>
-        <h4 className="mb-1 text-gray-400">phirawit@example.com</h4>
+        <h2 className="text-xl text-white font-semibold">Task Manager</h2>
+        <h4 className="mb-1 text-white">phirawit@example.com</h4>
         <hr />
       </div>
       <div className="break-words">
@@ -40,7 +40,7 @@ const Sidebar = () => {
           <Link
             to={items.link}
             key={i}
-            className="flex my-2 items-center hover:bg-gray-600 p-2 rounded transition-all duration-400"
+            className="flex my-2 items-center hover:bg-customOrange p-2 rounded transition-all duration-400"
           >
             {items.icon}
             <span style={{ marginLeft: "8px" }}>{items.title}</span>
@@ -48,7 +48,7 @@ const Sidebar = () => {
         ))}
       </div>
       <div>
-        <button className="bg-gray-600 w-full p-2 rounded">Log Out</button>
+        <button className="bg-pink-200 w-full p-2 rounded">Log Out</button>
       </div>
     </>
   );

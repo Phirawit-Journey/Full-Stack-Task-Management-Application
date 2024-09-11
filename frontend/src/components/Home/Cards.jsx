@@ -8,7 +8,7 @@ const Cards = () => {
     },
     {
       title: "Assignment",
-      desc: "Lorem ipsum dolor sit amet, consectetur a",
+      desc: "Lorem ipsum dolor sit amet, consectettetur adipiscing elitetur adipiscing eliur a",
     },
     {
       title: "Homework",
@@ -20,12 +20,24 @@ const Cards = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-4 gap-4 p-4">
+    <div className="grid grid-cols-3 gap-4 p-4">
       {data &&
         data.map((items, i) => (
-          <div key={i} className=" bg-gray-800 rounded-xl p-4">
-            <h3 className="text-xl font-semibold">{items.title}</h3>
-            <p className="break-words text-gray-300">{items.desc}</p>
+          <div
+            key={i}
+            className="flex flex-col justify-between bg-customLake rounded-xl p-4"
+          >
+            <div className="flex-grow">
+              <h3 className="text-xl text-white font-semibold">
+                {items.title}
+              </h3>
+              <p className="break-words text-white my-2">{items.desc}</p>
+            </div>
+            <div className="mt-auto w-full">
+              <button className="bg-customOrange text-white p-2 rounded ">
+                In Complete
+              </button>
+            </div>
           </div>
         ))}
     </div>
