@@ -13,7 +13,7 @@ module.exports = {
         customLightBrown: "#be8e60",
         customYellow: "#f4ecda",
         customOrange: "#ffbe98",
-        customDarkOrange: "#e87a28",
+        customDarkOrange: "#bc0008",
         customRed: "#cc7152",
       },
       boxShadow: {
