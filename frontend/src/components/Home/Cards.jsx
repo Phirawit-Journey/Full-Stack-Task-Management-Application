@@ -20,12 +20,12 @@ const Cards = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-3 gap-4 p-4">
+    <div className="grid grid-cols-3 gap-4 p-4 ">
       {data &&
         data.map((items, i) => (
           <div
             key={i}
-            className="flex flex-col justify-between bg-customLake rounded-xl p-4"
+            className="flex flex-col justify-between bg-customBrown rounded-2xl p-4 shadow-custom transition-transform duration-300 transform hover:scale-105 hover:shadow-hover"
           >
             <div className="flex-grow">
               <h3 className="text-xl text-white font-semibold">
@@ -34,7 +34,7 @@ const Cards = () => {
               <p className="break-words text-white my-2">{items.desc}</p>
             </div>
             <div className="mt-auto w-full">
-              <button className="bg-customOrange text-white p-2 rounded ">
+              <button className="bg-customRed text-white p-2 rounded-xl ">
                 In Complete
               </button>
             </div>

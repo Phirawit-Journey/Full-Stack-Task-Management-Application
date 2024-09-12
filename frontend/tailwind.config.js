@@ -3,14 +3,24 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Baloo Bhaijaan 2"', "ui-sans-serif", "system-ui"],
+      },
       colors: {
-        customPink: "#f9b2bc",
-        customLake: "#9ccfce",
-        customBlue: "#c2dad6",
-        customYellow: "#fdf3d6",
-        customPinklit: "#fee3ec",
+        customDarkBrown: "#533f38",
+        customBrown: "#986c51",
+        customgray: "#a8978d",
+        customLightBrown: "#be8e60",
+        customYellow: "#f4ecda",
         customOrange: "#ffbe98",
-        customGreen: "#d3edc5",
+        customDarkOrange: "#e87a28",
+        customRed: "#cc7152",
+      },
+      boxShadow: {
+        custom:
+          "4px 4px 8px rgba(0, 0, 0, 0.4), -4px -4px 8px rgba(255, 255, 255, 0.05)",
+        hover:
+          "6px 6px 12px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.05)",
       },
     },
   },
