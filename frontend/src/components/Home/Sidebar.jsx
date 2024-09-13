@@ -32,7 +32,7 @@ const Sidebar = () => {
     <>
       <div className="break-words">
         <h2 className="text-xl text-white font-semibold">Task Manager</h2>
-        <h4 className="mb-1 text-white">phirawit@example.com</h4>
+        <h4 className="mt-2 mb-1 text-white">phirawit@example.com</h4>
         <hr />
       </div>
       <div className="break-words">

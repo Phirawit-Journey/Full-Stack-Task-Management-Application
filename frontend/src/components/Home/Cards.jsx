@@ -4,7 +4,7 @@ import { CiEdit } from "react-icons/ci";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { MdOutlineLibraryAdd } from "react-icons/md";
 
-const Cards = ({ home }) => {
+const Cards = ({ home, setInputDiv }) => {
   const data = [
     {
       title: "The Best Coding Chanel",
@@ -67,10 +67,13 @@ const Cards = ({ home }) => {
           </div>
         ))}
       {home === "true" && (
-        <div className="flex flex-col justify-center items-center text-gray-200 bg-customBrown rounded-2xl p-4 shadow-custom transition-transform duration-300 transform hover:scale-105 hover:shadow-hover hover:cursor-pointer">
+        <button
+          className="flex flex-col justify-center items-center text-gray-200 bg-customBrown rounded-2xl p-4 shadow-custom transition-transform duration-300 transform hover:scale-105 hover:shadow-hover hover:cursor-pointer"
+          onClick={() => setInputDiv("fixed")}
+        >
           <MdOutlineLibraryAdd className="text-2xl" />
           <h3 className="text-2xl mt-2  font-semibold">Add Task</h3>
-        </div>
+        </button>
       )}
     </div>
   );
